@@ -1,26 +1,56 @@
 {
+  /* Live Server */
   "liveServer.settings.port": 5501,
-  "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "origamid-next-icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  /* Workbench */
+  "workbench.colorTheme": "Min Dark",
+  "workbench.iconTheme": "symbols",
+  "workbench.sideBar.location": "right",
+
+  /* Editor */
   "editor.fontSize": 16,
   "editor.lineHeight": 1.75,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.stickyScroll.enabled": false,
   "editor.minimap.renderCharacters": false,
-  "telemetry.telemetryLevel": "off",
-  "security.workspace.trust.untrustedFiles": "open",
-  "breadcrumbs.filePath": "off",
-  "outline.icons": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
   "editor.formatOnSave": true,
-  "html.format.wrapAttributes": "auto",
-  "html.format.wrapLineLength": 0,
-  "html.autoClosingTags": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.bracketPairColorization.enabled": false,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "editor.bracketPairColorization.enabled": false,
-  "files.autoSave": "afterDelay"
+
+  /* HTML Formatting */
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 0,
+  "html.autoClosingTags": false,
+
+  /* Files */
+  "files.autoSave": "afterDelay",
+
+  /* Breadcrumbs */
+  "breadcrumbs.filePath": "off",
+
+  /* Outline */
+  "outline.icons": false,
+
+  /*Terminal*/
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  /* Telemetry & Security */
+  "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": "none",
+  "window.commandCenter": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.layoutControl.enabled": false
 }
