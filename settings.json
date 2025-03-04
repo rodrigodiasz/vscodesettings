@@ -33,6 +33,7 @@
 
   /* Files */
   "files.autoSave": "afterDelay",
+  "explorer.compactFolders": false,
 
   /* Breadcrumbs */
   "breadcrumbs.filePath": "off",
