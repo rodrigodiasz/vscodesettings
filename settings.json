@@ -3,11 +3,15 @@
   "liveServer.settings.port": 5501,
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
-
+  
   /* Workbench */
   "workbench.colorTheme": "Min Dark",
   "workbench.iconTheme": "symbols",
   "workbench.sideBar.location": "right",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": "none",
 
   /* Editor */
   "editor.fontSize": 16,
@@ -19,14 +23,26 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.stickyScroll.enabled": false,
   "editor.minimap.renderCharacters": false,
+  "editor.selectionHighlight": true,
+  "workbench.colorCustomizations": {
+    "editor.wordHighlightBackground": "#88888888",          
+    "editor.wordHighlightStrongBackground": "#88888888",
+    "editor.wordHighlightBorder": "#c4c4c4c4",             
+    "editor.wordHighlightStrongBorder": "#c4c4c4c4"        
+},
+
+  // Formatador e ESLint
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.bracketPairColorization.enabled": false,
+
+  /* HTML Formatting */
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-
-  /* HTML Formatting */
   "html.format.wrapAttributes": "auto",
   "html.format.wrapLineLength": 0,
   "html.autoClosingTags": false,
@@ -34,20 +50,7 @@
   /* Files */
   "files.autoSave": "afterDelay",
   "explorer.compactFolders": false,
-  "files.associations": {
-    "*.blade.php": "html",
-    "*.css": "tailwindcss"
-  },
-
-  /* PHP */
-  "[php]": {
-    "editor.defaultFormatter": "open-southeners.laravel-pint"
-  },
-
-  /* Breadcrumbs */
   "breadcrumbs.filePath": "off",
-
-  /* Outline */
   "outline.icons": false,
 
   /*Terminal*/
@@ -58,28 +61,22 @@
   /* Telemetry & Security */
   "telemetry.telemetryLevel": "off",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.statusBar.visible": false,
-  "workbench.editor.showTabs": "none",
-  "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.layoutControl.enabled": false,
   "chat.commandCenter.enabled": false,
-  "workbench.settings.applyToAllProfiles": [],
-  "explorer.fileNesting.patterns": {
-    "*.ts": "${capture}.js",
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js",
-    "*.tsx": "${capture}.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
-    "*.sqlite": "${capture}.${extname}-*",
-    "*.db": "${capture}.${extname}-*",
-    "*.sqlite3": "${capture}.${extname}-*",
-    "*.db3": "${capture}.${extname}-*",
-    "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*",
-    "laravel-pint.enable": "true"
-  },
-  "json.schemas": [
-    
-  ]
+  "cursor.cpp.enablePartialAccepts": true
+  "cursor.general.globalCursorIgnoreList": [
+    "**/credentials.json",
+    "**/credentials.*.json",
+    "**/secret.json",
+    "**/secrets.json",
+    "**/*.key",
+    "**/*.pem",
+    "**/*.pfx",
+    "**/*.p12",
+    "**/*.crt",
+    "**/*.cer",
+    "**/id_rsa",
+    "**/id_dsa",
+    "**/.ssh/id_*"
+  ],
 }
+
